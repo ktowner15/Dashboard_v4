@@ -14,6 +14,7 @@ class RouteController extends Component {
             <Route path="/click" component={Click} />
             <Route path="/dashboard" component={Entry} />
             <Route path="/" exact component={Entry} />
+            {/* Error component triggers if none of the above routes can be loaded successfully */}
             <Route component={ErrorComponent} />
           </Switch>
         </Router>

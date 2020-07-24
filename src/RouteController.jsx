@@ -11,9 +11,23 @@ class RouteController extends Component {
         {/* The always-visible JSX/HTML is declared here, as well as RouterController links. Examples below:*/}
         <Router>
           <Switch>
-            <Route path="/click" component={Click} />
-            <Route path="/dashboard" component={Entry} />
+            {/* <Route path="/click" component={Click} /> */}
+
+            {/* Trying to pass props through the route here: */}
+
+            {/* I don't think we need this, but comment it back in if necessary */}
+            {/* <Route path="/dashboard" component={Entry} /> */}
             <Route path="/" exact component={Entry} />
+
+            {/* The following will be routes for each new environment that we add.  'id' refers to its position within the JS array. */}
+            <Route
+              path="/click"
+              component={() => <Click title="Click" id="0" />}
+            />
+            <Route
+              path="/env2"
+              component={() => <Click title="Env2" id="1" />}
+            />
             {/* Error component triggers if none of the above routes can be loaded successfully */}
             <Route component={ErrorComponent} />
           </Switch>

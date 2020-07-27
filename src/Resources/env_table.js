@@ -19,7 +19,7 @@ export default {
     },
     //Whatever environment is next will have an id corresponding to the position at which its environments are placed within the 'apps' array
     {
-      appName: "EnvNext",
+      appName: "Env2",
       list: [
         { name: "next1", usage: "usage1" },
         { name: "next2", usage: "usage2" }

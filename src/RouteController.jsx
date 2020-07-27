@@ -19,12 +19,12 @@ class RouteController extends Component {
             {/* <Route path="/dashboard" component={Entry} /> */}
 
             {/* TODO: find a way to render additional tiles on the page, and have them redirect an env page that depends on the props specified in the 'entry' object */}
+
             {/* FIXME: this works if you have  */}
 
+            {/* <Route path="/" exact component={Entry}/> */}
             {/* FIXME: left off here */}
-            <div id="Click">
-              <Route ref="Click" path="/" exact component={Entry} />
-            </div>
+            <Route path="/" exact component={Entry} />
 
             {/* <Route
               path="/"
